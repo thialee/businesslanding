@@ -1,6 +1,6 @@
 /*stylesheet*/
 img {
-    height: 300px;
+    max-height: 300px;
     width: auto;
 }
 
@@ -10,9 +10,13 @@ header {
     font-size: 24px;
     display: flex;
     justify-content: space-between;
-    padding: 16px;
+    padding: 8px;
+    padding-left: 160px;
+    padding-right: 160px;
     align-items: stretch;
     gap: 16px;
+    margin: 0;
+    
 }
 
 ul {
@@ -22,16 +26,28 @@ ul {
     align-items: center;
     margin: 0;
     border: 0;
+    padding: 0;
     gap: 16px;
 }
 
 .optin {
     background-color: #1F2937;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 2;
+    margin: 0;
+    padding: 64px;
+    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
 }
+ 
+.left, .right {
+    display:flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 60px;
+    
+}
+
 
 .secondary, ul {
     font-size: 18px;
@@ -50,18 +66,88 @@ h2 {
     color: #1F2937;
 }
 
-.information {
-
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 8px;
+    flex-wrap: wrap;
 }
 
 .card {
-    height: auto;
-    width: 40px;
-   text-align: center;
-    
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card, p {
+    font-weight: 700;
+    text-align: center;
+    font-size: 16px;
+}
+
+.testimony {
+    background-color: #E5E7EB;
+    padding: 100px;
+    margin: 0;
+    gap: 100px;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.name {
+    text-align: right;
+    margin-right: 300px;
 
 }
 
+.action {
+    display: flex;
+    color: white;
+    margin: 50px;
+    margin-right: 200px;
+    margin-left:  200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #3882F6;
+    border-radius: 12px;
+    height: 60px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.button2 {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 12px;
+    color: white;
+    background-color: #3882F6;
+    padding: 20px;
+    font-size: 18px;
+    width: 300px;
+}
 footer {
     background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
